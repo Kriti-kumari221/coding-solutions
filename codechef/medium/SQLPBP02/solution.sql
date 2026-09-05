@@ -1,0 +1,1 @@
+select count(*) as fiction_count from books where genre="Fiction"
