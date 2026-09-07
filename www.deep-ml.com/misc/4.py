@@ -3,7 +3,7 @@
 // Language: Python3
 // Verdict: Accepted
 // URL: https://www.deep-ml.com/problems/4
-// Solved on: 2026-09-07T06:27:11.370Z
+// Solved on: 2026-09-07T06:28:55.921Z
 
 def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
 	raw=[]
@@ -13,11 +13,14 @@ def calculate_matrix_mean(matrix: list[list[float]], mode: str) -> list[float]:
 			for j in range(len(matrix)):
 				sum+=matrix[j][i]
 			raw.append(sum/len(matrix))
-	if mode=="raw":
+	if mode=="row":
 		for i in range(len(matrix)):
 			sum=0
 			for j in range(len(matrix[0])):
 				sum+=matrix[i][j]
 			raw.append(sum/len(matrix[0]))
 	
+
+
+
 	return raw
