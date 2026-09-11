@@ -3,7 +3,7 @@ class Solution {
         int pro=1;
         int max=nums[0];
         for(int i=0;i<nums.length;i++){
-            pro=Math.max(nums[i],pro*nums[i]);
+            pro=pro*nums[i];
             if(max<pro){
                 max=pro;
             }
